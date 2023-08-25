@@ -1,0 +1,24 @@
+{
+  "name": "js-advanced-diploma",
+  "version": "1.0.0",
+  "description": "Вы неплохо овладели не только продвинутыми возможностями JS, но и инфраструктурными инструментами. Вам поручили первый проект: разработать небольшую пошаговую игру.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/netology-code/js-advanced-diploma.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/netology-code/js-advanced-diploma/issues"
+  },
+  "homepage": "https://github.com/netology-code/js-advanced-diploma#readme",
+  "devDependencies": {
+    "babel-loader": "^9.1.3",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}
