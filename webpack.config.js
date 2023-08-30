@@ -10,6 +10,17 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.(png|jpg|gif)$/i,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192,
+            },
+          },
+        ],
+      },
+      {
         test: /\.tsx?$/,
         exclude: /node_modules/,
         use: {
@@ -39,6 +50,7 @@ module.exports = {
       },
     ],
   },
+
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
   },

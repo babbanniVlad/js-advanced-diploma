@@ -4,10 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "tsc:watch": "tsc -w",
-    "tsc": "tsc",
     "start": "webpack-dev-server --mode development",
     "build": "webpack --mode production",
+    "lint:fix": "eslint . --fix",
     "lint": "eslint .",
     "test": "jest",
     "coverage": "jest --coverage",
@@ -25,7 +24,6 @@
     "@babel/cli": "^7.7.7",
     "@babel/core": "^7.7.7",
     "@babel/preset-env": "^7.7.7",
-    "@types/jest": "^24.0.24",
     "babel-jest": "^24.9.0",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.4.0",
@@ -38,14 +36,13 @@
     "jsdoc": "^3.6.3",
     "live-server": "^1.2.1",
     "mini-css-extract-plugin": "^0.9.0",
-    "ts-jest": "^24.2.0",
-    "ts-loader": "^6.2.1",
-    "typescript": "^3.7.4",
+    "url-loader": "^4.1.1",
     "webpack": "^4.41.4",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.10.1"
   },
   "dependencies": {
-    "core-js": "^3.6.0"
+    "core-js": "^3.6.0",
+    "regenerator-runtime": "^0.14.0"
   }
 }
